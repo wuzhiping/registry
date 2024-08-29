@@ -1,0 +1,15 @@
+services:
+  registry:
+    build: ./
+    #image: registry:2
+    ports:
+    - "5000:5000"
+    environment:
+      REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+      STORAGE_PATH: /registry
+      STANDALONE: false
+      MIRROR_SOURCE: https:/registry-1.docker.io
+      MIRROR_SOURCE_INDEX: https://index.docker.io
+    volumes:
+      - ./data:/data
+      - ./registry:/registry
