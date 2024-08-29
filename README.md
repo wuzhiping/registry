@@ -3,7 +3,9 @@ docker registry mirror
 
 # sudo nano /etc/docker/daemon.json
 {
-  "registry-mirrors": ["https://<my-docker-mirror-host>"]
+  "registry-mirrors": [
+    "http://registry.feg.cn:5000"
+  ]
 }
 
 # sudo systemctl daemon-reload
