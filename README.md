@@ -1,0 +1,2 @@
+# registry
+docker registry mirror
