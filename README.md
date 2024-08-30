@@ -2,7 +2,7 @@
 docker registry mirror
 
 # sudo nano /etc/docker/daemon.json
-‘’‘json
+```json
 {
   "registry-mirrors": ["http://registry.feg.cn:5000"],
   "proxies": {
@@ -11,6 +11,7 @@ docker registry mirror
     "no-proxy": "*.feg.cn,localhost,127.0.0.0/8"
   }
 }
-’‘’
+```
+
 # sudo systemctl daemon-reload
 # sudo systemctl restart docker
