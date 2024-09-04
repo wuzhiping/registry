@@ -1,7 +1,8 @@
 # registry
 docker registry mirror
-
+ 
 # sudo nano /etc/docker/daemon.json
+## "data-root": "/home/qing/data/docker"
 ```json
 {
   "insecure-registries" : ["registry.feg.cn:80"],
